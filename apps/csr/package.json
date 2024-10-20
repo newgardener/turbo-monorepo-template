@@ -13,12 +13,14 @@
     "tsc": "tsc -p tsconfig.json"
   },
   "dependencies": {
+    "@tanstack/react-query": "^5.59.15",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
   "devDependencies": {
     "@newgardener/eslint-config": "workspace:*",
     "@newgardener/tsconfig": "workspace:*",
+    "@tanstack/react-query-devtools": "^5.59.15",
     "@testing-library/jest-dom": "^6.6.2",
     "@testing-library/react": "^16.0.1",
     "@testing-library/user-event": "^14.5.2",
@@ -31,6 +33,7 @@
     "eslint-plugin-react-refresh": "^0.4.12",
     "eslint-plugin-simple-import-sort": "^10.0.0",
     "jsdom": "^25.0.1",
+    "msw": "^2.4.11",
     "typescript": "^5.5.3",
     "vite": "^5.4.8",
     "vitest": "^2.1.3"

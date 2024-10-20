@@ -43,6 +43,7 @@ module.exports = {
     ],
     'simple-import-sort/exports': 'error',
     'unicorn/filename-case': 'off',
+    'import/no-extraneous-dependencies': 'off',
     '@typescript-eslint/no-non-null-assertion': 'off',
     '@typescript-eslint/explicit-function-return-type': 'off',
     '@typescript-eslint/no-shadow': 'off',

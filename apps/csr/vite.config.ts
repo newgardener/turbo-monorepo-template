@@ -21,6 +21,6 @@ export default defineConfig({
     allowOnly: true,
     passWithNoTests: true,
     reporters: ['html'],
-    setupFiles: './src/setupTest.ts',
+    setupFiles: './src/test/setupTest.ts',
   },
 });
