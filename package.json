@@ -1,11 +1,17 @@
 {
   "name": "turbo-monorepo-template",
   "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
   "scripts": {
     "build": "turbo build",
+    "csr": "pnpm --filter csr",
     "dev": "turbo dev",
     "format": "prettier --write \"**/*.{ts,tsx,md,css,scss,html}\"",
-    "lint": "turbo lint"
+    "lint": "turbo lint",
+    "ssr": "pnpm --filter ssr"
   },
   "devDependencies": {
     "prettier": "^3.2.5",

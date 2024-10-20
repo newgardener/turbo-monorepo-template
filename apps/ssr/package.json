@@ -1,11 +1,11 @@
 {
-  "name": "web",
+  "name": "ssr",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "build": "next build",
-    "dev": "next dev --turbo",
-    "lint": "next lint",
+    "dev": "next dev --port 8080",
+    "lint": "eslint .",
     "start": "next start"
   },
   "dependencies": {
@@ -20,8 +20,12 @@
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
-    "eslint": "^8",
+    "@vercel/style-guide": "^5.0.1",
+    "eslint": "^8.57.0",
     "eslint-config-next": "14.2.6",
-    "typescript": "^5"
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-config-turbo": "^1.10.13",
+    "eslint-plugin-perfectionist": "^3.9.1",
+    "typescript": "^5.2.2"
   }
 }

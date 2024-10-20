@@ -4,10 +4,10 @@ const project = resolve(process.cwd(), 'tsconfig.json');
 
 module.exports = {
   extends: [
+    './base',
     '@vercel/style-guide/eslint/node',
     '@vercel/style-guide/eslint/typescript',
   ].map(require.resolve),
-  plugins: ['simple-import-sort'],
   parserOptions: {
     project,
   },
@@ -25,27 +25,5 @@ module.exports = {
         project,
       },
     },
-  },
-  ignorePatterns: ['node_modules/', 'dist/', '.eslintrc.js', '*.config.ts'],
-  rules: {
-    'import/no-default-export': 'off',
-    'import/order': 'off',
-    'simple-import-sort/imports': [
-      'error',
-      {
-        groups: [
-          ['^\\u0000'],
-          ['^@?\\w'],
-          ['^~/.*'],
-          ['^\\.\\.(?!/?$)', '^\\.\\./?$'],
-          ['^\\.(?!/?$)', '^\\./?$'],
-          ['^.+\\.s?css$'],
-        ],
-      },
-    ],
-    'simple-import-sort/exports': 'error',
-    '@typescript-eslint/no-non-null-assertion': 'off',
-    '@typescript-eslint/explicit-function-return-type': 'off',
-    '@typescript-eslint/no-shadow': 'off',
   },
 };
