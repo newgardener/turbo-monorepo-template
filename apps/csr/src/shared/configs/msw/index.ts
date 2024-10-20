@@ -1,4 +1,4 @@
 export const initMsw = async () => {
-  const { worker } = await import('@/shared/config/msw/browser');
+  const { worker } = await import('@/shared/configs/msw/browser');
   await worker.start({ onUnhandledRequest: 'bypass' });
 };

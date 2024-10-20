@@ -1,6 +1,6 @@
 import { afterAll, afterEach, beforeAll } from 'vitest';
 
-import { server } from '@/shared/config/msw/server';
+import { server } from '@/shared/configs/msw/server';
 
 beforeAll(() => {
   server.listen();
