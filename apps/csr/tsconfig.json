@@ -1,4 +1,11 @@
 {
   "extends": "@newgardener/tsconfig/vite.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    "types": ["vitest/globals"]
+  },
   "include": ["src", "vite.config.ts"]
 }
