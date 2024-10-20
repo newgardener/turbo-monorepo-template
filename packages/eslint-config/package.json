@@ -1,21 +1,16 @@
 {
-  "name": "@repo/eslint-config",
+  "name": "@newgardener/eslint-config",
+  "license": "MIT",
   "version": "0.0.0",
   "private": true,
-  "files": [
-    "library.js",
-    "next.js",
-    "react-internal.js"
-  ],
   "devDependencies": {
-    "@eslint/js": "^9.11.1",
-    "eslint": "^9.11.1",
-    "eslint-config-prettier": "^9.1.0",
-    "@typescript-eslint/parser": "^7.1.0",
-    "@typescript-eslint/eslint-plugin": "^7.1.0",
-    "typescript": "^5.3.3"
+    "@vercel/style-guide": "^5.0.1",
+    "eslint-config-turbo": "^1.10.13",
+    "eslint-plugin-simple-import-sort": "^10.0.0",
+    "typescript": "^5.2.2"
   },
   "peerDependencies": {
-    "eslint": ">=9"
+    "eslint": ">= 8",
+    "prettier": ">= 3"
   }
 }

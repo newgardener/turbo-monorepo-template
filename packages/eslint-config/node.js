@@ -4,16 +4,20 @@ const project = resolve(process.cwd(), 'tsconfig.json');
 
 module.exports = {
   extends: [
-    '@vercel/style-guide/eslint/browser',
+    '@vercel/style-guide/eslint/node',
     '@vercel/style-guide/eslint/typescript',
-    '@vercel/style-guide/eslint/react',
   ].map(require.resolve),
   plugins: ['simple-import-sort'],
-  globals: {
-    JSX: true,
-  },
   parserOptions: {
     project,
+  },
+  globals: {
+    React: true,
+    JSX: true,
+  },
+  env: {
+    node: true,
+    browser: true,
   },
   settings: {
     'import/resolver': {
@@ -43,6 +47,5 @@ module.exports = {
     '@typescript-eslint/no-non-null-assertion': 'off',
     '@typescript-eslint/explicit-function-return-type': 'off',
     '@typescript-eslint/no-shadow': 'off',
-    'import/no-default-export': 'off',
   },
 };

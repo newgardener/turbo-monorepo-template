@@ -1,11 +1,11 @@
 {
   "name": "csr",
-  "private": true,
   "version": "0.0.0",
+  "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vite",
     "build": "tsc -b && vite build",
+    "dev": "vite",
     "lint": "eslint .",
     "preview": "vite preview"
   },
@@ -15,6 +15,8 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.11.1",
+    "@newgardener/eslint-config": "workspace:*",
+    "@newgardener/tsconfig": "workspace:*",
     "@types/react": "^18.3.10",
     "@types/react-dom": "^18.3.0",
     "@vitejs/plugin-react-swc": "^3.5.0",

@@ -1,3 +1,7 @@
-# `@turbo/eslint-config`
+# @newgardener/eslint-config
 
-Collection of internal eslint configurations.
+```js
+module.exports = {
+  extends: ['@newgardener/eslint-config/library'],
+};
+```
