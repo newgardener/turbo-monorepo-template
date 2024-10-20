@@ -6,7 +6,9 @@
     "build": "next build",
     "dev": "next dev --port 8080",
     "lint": "eslint .",
-    "start": "next start"
+    "lint:fix": "eslint . --fix",
+    "start": "next start",
+    "tsc": "tsc -p tsconfig.json"
   },
   "dependencies": {
     "@repo/ui": "workspace:*",
@@ -24,8 +26,7 @@
     "eslint": "^8.57.0",
     "eslint-config-next": "14.2.6",
     "eslint-config-prettier": "^9.1.0",
-    "eslint-config-turbo": "^1.10.13",
     "eslint-plugin-perfectionist": "^3.9.1",
-    "typescript": "^5.2.2"
+    "typescript": "^5.5.3"
   }
 }

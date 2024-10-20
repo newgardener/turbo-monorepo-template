@@ -9,7 +9,6 @@ module.exports = {
     '@vercel/style-guide/eslint/typescript',
     '@vercel/style-guide/eslint/browser',
     '@vercel/style-guide/eslint/react',
-    'eslint-config-turbo',
   ].map(require.resolve),
   plugins: ['simple-import-sort'],
   parserOptions: {
